@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página de servicios web" />
+    <meta name="robots" content="NOFOLLOW" />
+    <meta name="Author" content="Alejandro Torres" />
+    <meta
+      name="keywords"
+      content="ATMC development, desarrollo web, programacion, web, html, css"
+    />
+    <meta name="revisit-after" content="2 days" />
+    <meta name="category" content="Desarrollo Web" />
+
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontello.css" />
+    <title>AMTC Presupuesto</title>
+  </head>
+
+  <body>
+    <!-- Cabecera -->
+    <header>
+      <div class="contenedor">
+        <h1 class="icon-github-circled">Amtc Dev</h1>
+        <input type="checkbox" id="menu-bar" />
+        <label class="icon-menu" for="menu-bar"></label>
+        <nav class="menu">
+          <a href="index.html">Inicio</a>
+          <a href="portafolio.html">Portafolio</a>
+          <a href="#" class="icon-right-open">Presupuesto</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="formulario">
+      <main>
+        <section id="banner">
+          <img
+            src="img/banner.png"
+            alt="ATMC Dev, soluciones web personalizadas"
+          />
+          <script
+            src="https://kit.fontawesome.com/ca0e3ecd50.js"
+            crossorigin="anonymous"
+          ></script>
+          <h2>AMTC development. Soluciones Web personalizadas</h2>
+        </section>
+
+        <section>
+          <form action="" name="presupuesto" onsubmit="return validar()">
+            <h3>Presupuesto</h3>
+            <p>
+              Pide tu presupuesto sin compromiso y nos pondremos en contacto
+              contigo lo antes posible.
+            </p>
+            <input
+              type="text"
+              name="Nombre"
+              id="nombre"
+              placeholder="Nombre (requerido)"
+              required
+            />
+            <input
+              type="text"
+              name="Apellidos"
+              id="apellidos"
+              placeholder="Apellidos (requerido) "
+              required
+            />
+            <input
+              type="tel"
+              id="telefono"
+              name="Telefono de contacto"
+              class="caja_gris"
+              maxlength="50"
+              size="40"
+              id="TELEFONO"
+              value=""
+              placeholder="Teléfono (requerido)"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="Email"
+              class="caja_gris"
+              id="EMAIL"
+              placeholder="Email (requerido)"
+              required
+            />
+            <textarea
+              name="mensaje"
+              placeholder="Cuéntanos brevemente qué necesitas."
+              required
+            ></textarea>
+            <input type="submit" value="Enviar" id="botonSend" disabled />
+            <input
+              type="reset"
+              value="Reset"
+              id="botonReset"
+              onclick="resetbackg()"
+            />
+
+            <div class="terminos">
+              <input
+                type="checkbox"
+                name="privacidad"
+                id="privacidad"
+                onclick="permitirEnviar()"
+              />
+              Debes aceptar nuestra
+              <a href="privacidad.html" target="_blank"
+                >Política de Privacidad.</a
+              >
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer-presupuesto">
+        <div class="div_footer">
+          <div class="div_footer_rrss">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com" class="facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com" class="instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com" class="twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://es.linkedin.com" class="linkedin"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+
+            <p>
+              Alejandro Torres, diseñador web freelance . Teléfono +76 111 222
+              333
+            </p>
+            <p>Todos los derechos reservados</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- declaracion de scripts -->
+    <script type="text/javascript" src="jscript/script.js"></script>
+  </body>
+</html>
