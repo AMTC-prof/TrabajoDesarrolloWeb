@@ -21,9 +21,10 @@
       src="https://kit.fontawesome.com/ca0e3ecd50.js"
       crossorigin="anonymous"
     ></script>
+    <script type="text/JavaScript" src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyDBBr8AYlUNVG-Y9Ay0EYhfBbvjQIRymR0"> </script>
     <title>AMTC Contacto</title>
   </head>
-  <body>
+  <body onload="cargarmapa()">
     <!-- Cabecera -->
     <header>
       <div class="contenedor">
@@ -70,6 +71,12 @@
           </p>
         </div>
 
+        Partida: <input id="partida" type="textbox" vaue=""><br/>
+        <input type="button" value="Geolocalizar" onclick="calcularRuta()">
+        <br/><br/><br/>
+        <div  id="mapa" style="position:relative;float:left;width:80%; height: 400px"></div> 
+        <div id="ruta" style="position:relative;float:left;width:250px; background-color: rgb(127, 140, 255); margin-top: 20px; "></div>
+<!-- 
         <div class="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1423.8672240685373!2d-16.36919748177873!3d28.357679097689847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc402d97f8fa06e1%3A0x27d133326e9726b8!2sCalle%20la%20Puntita%2C%2018%2C%2038509%20Candelaria%2C%20Santa%20Cruz%20de%20Tenerife!5e0!3m2!1ses!2ses!4v1591539439983!5m2!1ses!2ses"
@@ -93,7 +100,9 @@
             aria-hidden="false"
             tabindex="0"
           ></iframe>
-        </div>
+        </div> -->
+
+
       </section>
     </main>
 
@@ -130,5 +139,6 @@
         </div>
       </div>
     </footer>
+    <script src="jscript/map.js"></script>
   </body>
 </html>

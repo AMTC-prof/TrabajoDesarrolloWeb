@@ -572,7 +572,10 @@ iframe {
 }
 
 .map {
-  text-align: center;
+  float: left;
+  position: relative;
+  width: 80%;
+  height: 380px;
 }
 
 .mediummap {
