@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
     <link rel="stylesheet" type="text/css" href="css/fontello.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>AMTC Presupuesto</title>
   </head>
 
@@ -55,6 +56,7 @@
               Pide tu presupuesto sin compromiso y nos pondremos en contacto
               contigo lo antes posible.
             </p>
+            <h3>Datos</h3>
             <input
               type="text"
               name="Nombre"
@@ -90,11 +92,85 @@
               placeholder="Email (requerido)"
               required
             />
-            <textarea
-              name="mensaje"
-              placeholder="Cuéntanos brevemente qué necesitas."
-              required
-            ></textarea>
+
+            <h3>La Web</h3>
+
+            <p>
+              Tipo de Web:
+              <select name="tipoweb" id="tipoweb">
+                <option selected="true" disabled="disabled" value="0">Selecciona una opción</option>
+                <option value="300">Blog 300€</option>
+                <option value="500">Página personal 500€</option>
+                <option value="900">Página PYME 900€</option>
+                <option value="4000">Página Gran Empresa 4000€</option>
+              </select>
+            </p>
+
+            <p>
+              Plazo en meses:
+              <input type="number" style="width: 40%" />
+            </p>
+            <div class="secciones">
+              <p>
+                Secciones adicionales: <br /><br />
+                <label
+                  ><input
+                    type="checkbox"
+                    id="galeriaFotos"
+                    name="galeriaFotos"
+                    value="400"
+                  />Galeria de fotos</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    id="noticias"
+                    name="noticias"
+                    value="400"
+                  />
+                  Noticias</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    id="redes"
+                    name="redes"
+                    value="400"
+                  />Redes sociales</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    id="whoami"
+                    name="whoami"
+                    value="400"
+                  />Quienes somos</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    id="contacto"
+                    name="contacto"
+                    value="400"
+                  />Contacto</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    id="foro"
+                    name="foro"
+                    value="400"
+                  />Foro</label
+                >
+              </p>
+            </div>
+
+            <div class="costeTotal"> 
+              
+            </div>
+
+            <input type="button" value="Calcular Presupuesto" id="botonCalcular" onclick="calcular()" />
+
             <input type="submit" value="Enviar" id="botonSend" disabled />
             <input
               type="reset"
@@ -156,5 +232,6 @@
     </div>
     <!-- declaracion de scripts -->
     <script type="text/javascript" src="jscript/script.js"></script>
+    <script type="text/javascript" src="jscript/presupuesto.js"></script>
   </body>
 </html>

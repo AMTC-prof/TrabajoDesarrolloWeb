@@ -470,6 +470,7 @@ textarea {
   min-height: 70px;
   max-width: 96%;
   min-width: 96%;
+    
 }
 
 #botonReset {
@@ -480,6 +481,12 @@ textarea {
 
 #botonSend {
   background: rgb(127, 128, 131);
+  color: #fff;
+  padding: 10px;
+}
+
+#botonCalcular {
+  background: rgb(68, 73, 114);
   color: #fff;
   padding: 10px;
 }
@@ -502,6 +509,25 @@ textarea {
 .terminos a {
   color: #e4405f;
 }
+
+.secciones label {
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+  
+}
+
+.secciones input {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin: 2px;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  *overflow: hidden;
+}
+
 
 /* ---------------------------------------------------------- */
 /* ----------- Estilos de Contacto -------------------------- */
